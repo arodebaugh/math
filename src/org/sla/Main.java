@@ -30,7 +30,7 @@ public class Main {
 
         System.out.println(" ");
 
-        // Todo: Two Step
+        // Two Step
 
         System.out.println(first + "x " + symbol + " " + second + " = " + last);
 
