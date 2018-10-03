@@ -69,5 +69,61 @@ public class Main {
                 System.out.println("Variable symbol must equal + - / or * only");
                 break;
         }
+
+        System.out.println(" ");
+
+        // Squared
+
+        System.out.println(first + "x^2 " + symbol + " " + second + " = " + last);
+
+        switch (symbol) {
+            case "+":
+                System.out.println(first + "x^2 = " + last + " - " + second);
+                System.out.println(first + "x^2 = " + Double.toString(last - second));
+                System.out.println("x^2 = " + Double.toString(last - second) + " / " + first);
+                System.out.println("x^2 = " + Double.toString((last - second) / first));
+
+                System.out.println("x = ± sqrt(" + Double.toString((last - second) / first) + ")");
+                System.out.println("x = " + Double.toString(Math.sqrt((last - second) / first)));
+                System.out.println("and");
+                System.out.println("x = " + Double.toString((Math.sqrt((last - second) / first)) * -1));
+                break;
+            case "-":
+                System.out.println(first + "x^2 = " + last + " + " + second);
+                System.out.println(first + "x^2 = " + Double.toString(last + second));
+                System.out.println("x^2 = " + Double.toString(last + second) + " / " + first);
+                System.out.println("x^2 = " + Double.toString((last + second) / first));
+
+                System.out.println("x = ± sqrt(" + Double.toString((last + second) / first) + ")");
+                System.out.println("x = " + Double.toString(Math.sqrt((last + second) / first)));
+                System.out.println("and");
+                System.out.println("x = " + Double.toString((Math.sqrt((last + second) / first)) * -1));
+                break;
+            case "/":
+                System.out.println(first + "x^2 = " + last + " * " + second);
+                System.out.println(first + "x^2 = " + Double.toString(last * second));
+                System.out.println("x^2 = " + Double.toString(last * second) + " / " + first);
+                System.out.println("x^2 = " + Double.toString((last * second) / first));
+
+                System.out.println("x = ± sqrt(" + Double.toString((last * second) / first) + ")");
+                System.out.println("x = " + Double.toString(Math.sqrt((last * second) / first)));
+                System.out.println("and");
+                System.out.println("x = " + Double.toString((Math.sqrt((last * second) / first)) * -1));
+                break;
+            case "*":
+                System.out.println(first + "x^2 = " + last + " / " + second);
+                System.out.println(first + "x^2 = " + Double.toString(last / second));
+                System.out.println("x^2 = " + Double.toString(last / second) + " / " + first);
+                System.out.println("x^2 = " + Double.toString((last / second) / first));
+
+                System.out.println("x = ± sqrt(" + Double.toString((last / second) / first) + ")");
+                System.out.println("x = " + Double.toString(Math.sqrt((last / second) / first)));
+                System.out.println("and");
+                System.out.println("x = " + Double.toString((Math.sqrt((last / second) / first)) * -1));
+                break;
+            default:
+                System.out.println("Variable symbol must equal + - / or * only");
+                break;
+        }
     }
 }
